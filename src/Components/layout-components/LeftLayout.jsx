@@ -10,11 +10,11 @@ const LeftLayout = () => {
       .then((data) => setCategories(data.data.news_category));
   }, []);
   return (
-    <div className=" flex justify-center items-center ">
-      <h2 className="font-semibold mb-3">
+    <div className="">
+      <h2 className="font-semibold mb-3 ">
         All Categories ({Categories.length})
       </h2>
-      <div className="flex flex-col gap-3  items-center justify-center ">
+      <div className="flex flex-col gap-3 justify-center items-center ">
         {Categories.map((category) => (
           <NavLink
             to={`/category/${category.category_id}`}
